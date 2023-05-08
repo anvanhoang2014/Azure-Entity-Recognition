@@ -1,0 +1,1 @@
+# Implementation of Entity Recognition API Using Azure Cognitive Services
