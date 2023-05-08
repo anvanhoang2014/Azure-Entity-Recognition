@@ -10,10 +10,12 @@
     <% } else { %>
       <ul>
         <% result[0].entities.forEach(function(entity) { %>
-          <li>Text: <%= entity.text %></li>
-          <li>Category: <%= entity.category %></li>
-          <li>Confidence Score: <%= entity.confidenceScore %></li>
-        <% }); %>
+          <li>
+            <p>Text: <%= entity.text %></p>
+            <p>Category: <%= entity.category %></p>
+            <p>Confidence Score: <%= entity.confidenceScore %></p>
+            <% }); %>
+          </li>
       </ul>
     <% } %>
   </div>
