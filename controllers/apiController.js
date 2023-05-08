@@ -24,7 +24,7 @@ exports.namedResult = async (req, res, next) => {
                 { id: "1", language:isoCode, text:textInput[0] },
                 ];
                 const results = await entityRecognition(textDocumentInputs);
-                res.send(results);
+                res.status(200).send(results);
             }
         } 
         
@@ -39,7 +39,8 @@ exports.namedResult = async (req, res, next) => {
 }
 
 exports.languagesNamed = (req, res) => {
-    return res.render('./namedEntityRecognition/languages' , {languages: languageData});
+    const results = languageData.entity;
+    res.status(200).send(results);
 };
 
 exports.linkingResult = async (req, res, next) => {
@@ -60,7 +61,7 @@ exports.linkingResult = async (req, res, next) => {
                 { id: "1", language:isoCode, text:textInput[0] },
                 ];
                 const results = await entityLinking(textDocumentInputs);
-                res.send(results);
+                res.status(200).send(results);
             }
         } 
     
@@ -75,7 +76,8 @@ exports.linkingResult = async (req, res, next) => {
 };
 
 exports.languagesLinking = (req, res) => {
-  return res.render('./entityLinking/languages' , {languages: languageData});
+    const results = languageData.linking;
+    res.status(200).send(results);
 };
 
 exports.piiResult = async (req, res, next) => {
@@ -96,7 +98,7 @@ exports.piiResult = async (req, res, next) => {
                 { id: "1", language:isoCode, text:textInput[0] },
                 ];
                 const results = await piiDetection(textDocumentInputs);
-                res.send(results);
+                res.status(200).send(results);
             }
         }
         if (!isLanguageSupported) {
@@ -109,5 +111,6 @@ exports.piiResult = async (req, res, next) => {
 }
 
 exports.languagesPII = (req, res) => {
-    return res.render('./piiDetection/languages' , {languages: languageData});
+    const results = languageData.pii;
+    res.status(200).send(results);
 };
