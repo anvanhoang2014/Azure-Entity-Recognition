@@ -29,7 +29,6 @@ exports.namedResult = async (req, res, next) => {
           { id: "1", language:isoCode, text:textInput[0] },
         ];
         const results = await entityRecognition(textDocumentInputs);
-        //res.render('./namedEntityRecognition/result', { result: results, text: textInput });
         res.status(200).render('./namedEntityRecognition/result', { result: results, text: textInput });
       }
     } 
@@ -75,7 +74,7 @@ exports.linkingResult = async (req, res, next) => {
     } 
   
     if (!isLanguageSupported) {
-      const error = createError('Language not supported', 500);
+      const error = createError('Language not supported', 400);
       return next(error);
     }
 
