@@ -1,0 +1,37 @@
+<%- include('../partials/header.ejs') %>
+
+<div class="container">
+  <h1>Named Entity Recognition Result</h1>
+<div class="flex-container">
+  <div class="content">
+    <h2>Entities Found</h2>
+    <% if (result[0].entities.length === 0) { %>
+      <p>There are no entities</p>
+    <% } else { %>
+      <ul>
+        <% result[0].entities.forEach(function(entity) { %>
+          <li>Text: <%= entity.text %></li>
+          <li>Category: <%= entity.category %></li>
+          <li>Confidence Score: <%= entity.confidenceScore %></li>
+        <% }); %>
+      </ul>
+    <% } %>
+  </div>
+  <div class="input-section">
+    <h2>Highlighted Entities</h2>
+    <p>
+      <% var index = 0; %>
+      <% result[0].entities.forEach(function(entity) { %>
+        <% var startIndex = entity.offset; %>
+        <% var endIndex = startIndex + entity.length; %>
+        <%= text[0].substring(index, startIndex) %>
+        <span class="highlight"><%= text[0].substring(startIndex, endIndex) %></span>
+        <% index = endIndex; %>
+      <% }); %>
+      <%= text[0].substring(index) %>
+    </p>
+  </div>
+</div>
+</div>
+
+<%- include('../partials/footer.ejs') %>

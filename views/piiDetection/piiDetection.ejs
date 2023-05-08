@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs') %>
+
+
+<div class="content">
+    <form action="pii/result" method="POST">
+        <textarea type="text" name="sendText"></textarea>
+        <input type="submit" value="Upload" />
+    </form>
+    <form action="pii/languages" method="GET">
+        <input type="submit" value="Languages" />
+    </form>
+</div>
+
+
+<%- include('../partials/footer.ejs') %>

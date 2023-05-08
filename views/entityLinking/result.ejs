@@ -1,0 +1,60 @@
+<%- include('../partials/header.ejs') %>
+
+<div class="container">
+  <h1>Entity Linking Result</h1>
+  <div class="flex-container">
+    <div class="content">
+      <h2>Entities Linking Found</h2>
+      <% if (result && result.length > 0) { %>
+        <% result.forEach(function (document) { %>
+          <% if (document.entities && document.entities.length > 0) { %>
+            <ul>
+            <% document.entities.forEach(function (entity) { %>
+              <li>
+                <h3><%= entity.name %></h3>
+                <p>Matches:</p>
+                <ul>
+                  <% entity.matches.forEach(function (match) { %>
+                    <li>
+                        <p>Text: <%= match.text %></p>
+                    </li>
+                    <li>
+                        <p>Confidence Score: <%= match.confidenceScore %></p>
+                    </li>
+                  <% }) %>
+                    <li>
+                        <p>URL: <%= entity.url %></p>
+                    </li>
+                    <li>
+                        <p>Source: <%= entity.dataSource %></p>
+                    </li>
+                </ul>
+              </li>
+            <% }) %>
+            </ul>
+          <% } else { %>
+            <p>No linking entities found.</p>
+          <% } %>
+        <% }) %>
+      <% } else { %>
+        <p>No results found.</p>
+      <% } %>
+    </div>
+    <div class="input-section">
+      <h2>Highlighted Entities</h2>
+      <p>
+        <% var index = 0; %>
+        <% result[0].entities.forEach(function(entity) { %>
+          <% var startIndex = entity.matches[0].offset; %>
+          <% var endIndex = startIndex + entity.matches[0].length; %>
+          <%= text[0].substring(index, startIndex) %>
+          <span class="highlight"><%= text[0].substring(startIndex, endIndex) %></span>
+          <% index = endIndex; %>
+        <% }); %>
+        <%= text[0].substring(index) %>
+      </p>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer.ejs') %>

@@ -1,0 +1,18 @@
+<%- include('../partials/header.ejs') %>
+
+<div class="content">
+  <h1>PII Detection: Supported Languages</h1>
+  <ul>
+    <ul>
+      <% for (const languageCode in languages.pii) { %>
+        <li><%= languages.entity[languageCode].name %></li>
+      <% } %>
+    </ul>
+  </ul>
+  <a href="/entity/named">
+      <button class="button-default">PII Detection</button>
+  </a>
+</div>
+
+
+<%- include('../partials/footer.ejs') %>
