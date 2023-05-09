@@ -85,7 +85,7 @@ TEXT_ANALYTICS_API_KEY = API KEY #API key from Azure Cognitive Services
   
   
   
- ### API - Endpoints for JSON response
+ ### API Endpoints - JSON response
 | Endpoint           | Description                                                             |
 | ------------------ | ----------------------------------------------------------------------- |
 | `POST /api/named/result`   |   Performs Named Entity Recognition for the provided text                   |
@@ -96,10 +96,10 @@ TEXT_ANALYTICS_API_KEY = API KEY #API key from Azure Cognitive Services
 | `GET /api/pii/languages`   | Returns the list of languages supported by PII                    |
   
   
- ### Using the API (Example)
+ ### Using the API
 ---
 
-The API can be used by sending a POST request to the endpoint. The request body should be in JSON format and should contain the following fields:
+To use the API, send a POST request to the endpoint. The request body should be in JSON format and should contain the following fields:
 - [ ] `sendText`: The text to used for recognition
 
 ### Example: POST /api/named/result
