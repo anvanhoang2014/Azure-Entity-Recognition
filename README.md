@@ -20,7 +20,7 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 <img src="demo/app-demo.gif"> 
 
 #### API Playground (Swagger)
-<gif goes here>
+<img src="demo/swagger-demo.gif"> 
   
 ---
   
