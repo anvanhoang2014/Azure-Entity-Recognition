@@ -22,6 +22,7 @@ exports.namedResult = async (req, res, next) => {
     const isoCode = await detectLanguage(textInput);
     let isLanguageSupported = false;
     
+    // Check if the detected language is supported
     for (const languageCode in languageData.entity) {
       if (languageCode === isoCode) {
         isLanguageSupported = true;
@@ -32,7 +33,8 @@ exports.namedResult = async (req, res, next) => {
         res.status(200).render('./namedEntityRecognition/result', { result: results, text: textInput });
       }
     } 
-  
+    
+    // Return error if the detected language is not supported
     if (!isLanguageSupported) {
       const error = createError('Language not supported', 500);
       return next(error);
@@ -60,7 +62,8 @@ exports.linkingResult = async (req, res, next) => {
     }
     const isoCode = await detectLanguage(textInput);
     let isLanguageSupported = false;
-
+    
+    // Check if the detected language is supported
     for (const languageCode in languageData.linking) {
       if (languageCode === isoCode) {
         isLanguageSupported = true;
@@ -71,7 +74,8 @@ exports.linkingResult = async (req, res, next) => {
         res.status(200).render('./entityLinking/result', { result: results, text: textInput});
       }
     } 
-  
+    
+    // Return error if the detected language is not supported
     if (!isLanguageSupported) {
       const error = createError('Language not supported', 400);
       return next(error);
@@ -101,6 +105,7 @@ exports.piiResult = async (req, res, next) => {
     const isoCode = await detectLanguage(textInput);
     let isLanguageSupported = false;
 
+    // Check if the detected language is supported
     for (const languageCode in languageData.pii) {
       if (languageCode === isoCode) {
         isLanguageSupported = true;
@@ -111,6 +116,8 @@ exports.piiResult = async (req, res, next) => {
         res.status(200).render('./piiDetection/result', { result: results, text: textInput});
       }
     }
+
+    // Return error if the detected language is not supported
     if (!isLanguageSupported) {
       const error = createError('Language not supported', 400);
       return next(error);

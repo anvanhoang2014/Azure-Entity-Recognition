@@ -69,11 +69,11 @@ TEXT_ANALYTICS_API_KEY = API KEY #API key from Azure Cognitive Services
 
 | Endpoint           | Description                                                             |
 | ------------------ | ----------------------------------------------------------------------- |
-| `POST /entity/named/result`   |   Performs Named Entity Recognition for the provided text                   |
+| `POST /entity/named`   |   Performs Named Entity Recognition for the provided text                   |
 | `GET /entity/named/languages`   | Returns the list of languages supported by Named Entity Recognition                     |
-| `POST /entity/linking/result`   |   Performs Entity Linking for the provided text                   |
+| `POST /entity/linking`   |   Performs Entity Linking for the provided text                   |
 | `GET /entity/linking/languages`   | Returns the list of languages supported by Entity Linking                     |
-| `POST /entity/pii/result`   |   Performs Personally Identifiable Information (PII) detection for the provided text      |
+| `POST /entity/pii`   |   Performs Personally Identifiable Information (PII) detection for the provided text      |
 | `GET /entity/pii/languages`   | Returns the list of languages supported by PII                    |
   
   
@@ -81,11 +81,11 @@ TEXT_ANALYTICS_API_KEY = API KEY #API key from Azure Cognitive Services
  ### API Endpoints - JSON response
 | Endpoint           | Description                                                             |
 | ------------------ | ----------------------------------------------------------------------- |
-| `POST /api/named/result`   |   Performs Named Entity Recognition for the provided text                   |
+| `POST /api/named`   |   Performs Named Entity Recognition for the provided text                   |
 | `GET /api/named/languages`   | Returns the list of languages supported by Named Entity Recognition                     |
-| `POST /api/linking/result`   |   Performs Entity Linking for the provided text                   |
+| `POST /api/linking`   |   Performs Entity Linking for the provided text                   |
 | `GET /api/linking/languages`   | Returns the list of languages supported by Entity Linking                     |
-| `POST /api/pii/result`   |   Performs Personally Identifiable Information (PII) detection for the provided text      |
+| `POST /api/pii`   |   Performs Personally Identifiable Information (PII) detection for the provided text      |
 | `GET /api/pii/languages`   | Returns the list of languages supported by PII                    |
   
   
@@ -97,7 +97,7 @@ To use the API, send a POST request to the endpoint. The request body should be 
 
 ---
 
-#### Example: POST /api/named/result
+#### Example: POST /api/named
 
 ```json
 {
@@ -126,7 +126,7 @@ To use the API, send a POST request to the endpoint. The request body should be 
 
 ---
 
-#### Example: POST /api/linking/result
+#### Example: POST /api/linking
 
 ```json
 {
@@ -164,7 +164,7 @@ To use the API, send a POST request to the endpoint. The request body should be 
 
 ---
 
-#### Example: POST /api/pii/result
+#### Example: POST /api/pii
 
 ```json
 {
