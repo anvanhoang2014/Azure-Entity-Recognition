@@ -105,7 +105,7 @@
  *     description: Operations for entity linking
  *   - name: Personally Identifiable Information (PII) Detection
  *     description: Operations for PII detection
- * /api/named/result:
+ * /api/named:
  *   post:
  *     summary: Returns named entity recognition results for the provided text
  *     tags:
@@ -227,7 +227,7 @@
  *               type: object
  *               additionalProperties:
  *                 $ref: '#/components/schemas/LanguageData'
- * /api/linking/result:
+ * /api/linking:
  *   post:
  *     summary: Performs entity linking on input text
  *     tags:
@@ -394,7 +394,7 @@
  *               type: object
  *               additionalProperties:
  *                 $ref: '#/components/schemas/LanguageData'
- * /api/pii/result:
+ * /api/pii:
  *   post:
  *     summary: Returns PII detection results for the provided text
  *     tags:
