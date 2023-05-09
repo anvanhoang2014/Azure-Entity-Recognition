@@ -23,6 +23,23 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 ---
   
 ## Table of Contents
+- [ ] [Description](#description)
+  - [ ] [Quick Links](#quick-links)
+  - [ ] [Demo](#demo)
+  [ ] [Table of Contents](#table-of-contents)
+- [ ] [Features](#features)
+- [ ] [Getting Started](#getting-started)
+- [ ] [Endpoints](#endpoints)
+  - [ ] [Demo Application Endpoints](#demo-application-endpoints)
+  - [ ] [API Endpoints - JSON response](#api-endpoints---json-response)
+- [ ] [Using the API](#using-the-api)
+  - [ ] [Example Request Query](#example-post-apinamed)
+  - [ ] [Example Response](#expected-response-1) 
+  - [ ] [Invalid Request Query](#invalid-resquest--response-examples)
+  - [ ] [Example Response](#expected-response-4) 
+- [ ] [Q&A](#qa)
+- [ ] [Authors](#authors)
+- [ ] [License](#license)
   
 
 ---
