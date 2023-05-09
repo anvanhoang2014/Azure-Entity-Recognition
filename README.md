@@ -57,9 +57,9 @@ cd repo-name
 3. Set up environment variables in the `config` folder. Create a `.env` file and add the following as `key=value`:
 ```javascript
 HOST = Your Host Address
-PORT = Port Number # (ex: 3000)
-ENDPOINT = API ENDPOINT #ENDPOINT address from Azure Cognitive Services
-TEXT_ANALYTICS_API_KEY = API KEY #API key from Azure Cognitive Services
+PORT = Port Number //(ex: 3000)
+ENDPOINT = API ENDPOINT // ENDPOINT address from Azure Cognitive Services
+TEXT_ANALYTICS_API_KEY = API KEY // API key from Azure Cognitive Services
 ```
 4. Run "npm start".
 ---
