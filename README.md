@@ -42,17 +42,22 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 ---
 <a href="">![](https://img.shields.io/badge/GettingStarted-Setup-purple) </a>
 
-### Dependencies Required
+#### To use the API, you will need the following dependencies:
 
 - [x] [Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs/)
 - [x] [Azure Cognitive Services (API Key and Endpoint)](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Canomaly-detector%2Clanguage-service%2Ccomputer-vision%2Cwindows)
 
-### Running the program
-```bash
-git clone repo && cd repo
-npm install
-npm start
-```
+#### To run the program, follow these steps:
+
+1. Clone the repo and navigate to it.
+2. Run "npm install".
+3. Set up environment variables in the config folder. Create a .env file and add the following as key=value:
+HOST: Your host address.
+PORT: Port number (e.g., 3000).
+ENDPOINT: API endpoint address from Azure Cognitive Services.
+TEXT_ANALYTICS_API_KEY: API key from Azure Cognitive Services.
+4. Run "npm start".
+---
 ### Environment Variables
 ##### Inside the config folder, create a `.env` file and add the following as `key = value`
 
