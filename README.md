@@ -1,5 +1,6 @@
 # Entity Recognition API Using Azure Cognitive Services
 
+
 ## Description
 The API serves as an intermediary between the Client and Azure Cognitive Service for Language. It operates as a RESTful API that utilizes HTTP requests for both data retrieval and submission.
 
@@ -7,22 +8,21 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 
 ## Quick Links
 - [x] [Working Application](http://159.65.233.166:3000/)
-
 - [x] [API Playground (Swagger)](http://159.65.233.166:3000/api-docs/)
 
 ## Demo
 
 ---
+
 <a href="">![](https://img.shields.io/badge/LiveDemo-POC-red)</a>
 
 #### Working Application
 <gif goes here>
-
 #### API Playground (Swagger)
-
 <gif goes here>
   
 ---
+  
 ## Table of Contents
   
 ---
@@ -34,6 +34,7 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 | `Entity Linking`   | Identifies and disambiguates the identity of entities found in text. For example, in the sentence "Hi, I'm Bill Gates", the words "Bill Gates" would be identified, with a link to more information on Wikipedia  |
 | `PII Detection`   |   Identify, categorize, and redact sensitive information in unstructured text. For example: phone numbers, email addresses, and forms of identification  |
 | `Language Detection`   |   When performing the above features, it will automatically detect user's language. |
+  
   
  ## Getting Started
 
