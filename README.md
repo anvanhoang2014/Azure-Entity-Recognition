@@ -10,10 +10,9 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 - [x] [Working Application](http://159.65.233.166:3000/)
 - [x] [API Playground (Swagger)](http://159.65.233.166:3000/api-docs/)
 
-## Demo
-
 ---
 
+## Demo
 
 #### Working Application
 <img src="demo/app-demo.gif"> 
