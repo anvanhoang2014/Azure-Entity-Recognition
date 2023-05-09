@@ -79,8 +79,8 @@ TEXT_ANALYTICS_API_KEY = API KEY // API key from Azure Cognitive Services
 | `POST /entity/pii`   |   Performs Personally Identifiable Information (PII) detection for the provided text      |
 | `GET /entity/pii/languages`   | Returns the list of languages supported by PII                    |
   
-
-<a href="http://findasnake.com">![](http://159.65.233.166:3000/Try-Demo-orange)</a>
+  
+<a href="http://159.65.233.166:3000/">![](https://img.shields.io/badge/Try-Demo-orange)</a>
 <img src="demo/app-demo.gif"> 
   
  ### API Endpoints - JSON response
