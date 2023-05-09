@@ -4,7 +4,6 @@
 The API serves as an intermediary between the Client and Azure Cognitive Service for Language. It operates as a RESTful API that utilizes HTTP requests for both data retrieval and submission.
 
 ---
-<a href="http://159.65.233.166:3000/">![](https://img.shields.io/badge/QuickLinks-Demo-blue)</a>
 
 ## Quick Links
 - [x] [Working Application](http://159.65.233.166:3000/)
