@@ -4,6 +4,7 @@ const apiRoutes = require('./routes/apiRoutes');
 const mainRoutes = require('./routes/mainRoutes');
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
+const cors = require('cors');
 const options = require('./models/swaggerConfig');
 require('dotenv').config();
 
@@ -27,6 +28,16 @@ app.use('/api', apiRoutes);
 const swaggerSpec = swaggerJsdoc(options);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Header', '*');
+  if (req.method === 'OPTIONS') {
+      res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+      return res.status(200).json({});
+  }
+  next();
+});
 
 app.use((req, res, next) => {
   const err = new Error(`The server cannot locate ${req.url}`);
