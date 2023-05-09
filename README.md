@@ -1,4 +1,4 @@
-# Implementation of Entity Recognition API Using Azure Cognitive Services
+# Recognition API Using Azure Cognitive Services
 
 ## Description
 The API serves as an intermediary between the Client and Azure Cognitive Service for Language. It operates as a RESTful API that utilizes HTTP requests for both data retrieval and submission.
@@ -60,7 +60,7 @@ TEXT_ANALYTICS_API_KEY = "<API KEY>" # API key
 ---
 
 
-
+### Working Application Endpoints
 | Endpoint           | Description                                                             |
 | ------------------ | ----------------------------------------------------------------------- |
 | `POST /entity/named/result`   |   Performs Named Entity Recognition for the provided text                   |
@@ -69,3 +69,16 @@ TEXT_ANALYTICS_API_KEY = "<API KEY>" # API key
 | `GET /entity/linking/languages`   | Returns the list of languages supported by Entity Linking                     |
 | `POST /entity/pii/result`   |   Performs Personally Identifiable Information (PII) detection for the provided text      |
 | `GET /entity/pii/languages`   | Returns the list of languages supported by PII                    |
+  
+  
+  
+  
+ ### API - Endpoints for JSON response
+| Endpoint           | Description                                                             |
+| ------------------ | ----------------------------------------------------------------------- |
+| `POST /api/named/result`   |   Performs Named Entity Recognition for the provided text                   |
+| `GET /api/named/languages`   | Returns the list of languages supported by Named Entity Recognition                     |
+| `POST /api/linking/result`   |   Performs Entity Linking for the provided text                   |
+| `GET /api/linking/languages`   | Returns the list of languages supported by Entity Linking                     |
+| `POST /api/pii/result`   |   Performs Personally Identifiable Information (PII) detection for the provided text      |
+| `GET /api/pii/languages`   | Returns the list of languages supported by PII                    |
