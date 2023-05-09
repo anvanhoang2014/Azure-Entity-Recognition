@@ -21,9 +21,9 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 #### API Playground (Swagger)
 
 <gif goes here>
-
+---
 ## Table of Contents
-  
+---
 ## Features
   - Named Entity Recognition (NER) - Identify and categorize entities in unstructured text. For example: people, places, organizations, and quantities.
   - Entity Linking - Identifies and disambiguates the identity of entities found in text. For example, in the sentence "Hi, I'm Bill Gates", the words "Bill Gates" would be identified, with a link to more information on Wikipedia.
@@ -33,7 +33,8 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 | ------------------ | ----------------------------------------------------------------------- |
 | `Named Entity Recognition (NER)`   |   Identify and categorize entities in unstructured text. For example: people, places, organizations, and quantities  |
 | `Entity Linking`   | Identifies and disambiguates the identity of entities found in text. For example, in the sentence "Hi, I'm Bill Gates", the words "Bill Gates" would be identified, with a link to more information on Wikipedia  |
-| `Personally Identifiable Information (PII) Detection`   |   Identify, categorize, and redact sensitive information in unstructured text. For example: phone numbers, email addresses, and forms of identification  |
+| `PII Detection`   |   Identify, categorize, and redact sensitive information in unstructured text. For example: phone numbers, email addresses, and forms of identification  |
+| `Language Detection`   |   When performing the above features, it will automatically detect user's language. |
   
  ## Getting Started
 
