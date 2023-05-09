@@ -36,7 +36,8 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 | Language Detection   |   Automatically detect the user's language when performing the above features |
   
   
- ## Getting Started
+<br>
+## Getting Started
 
 ---
 
@@ -104,7 +105,7 @@ TEXT_ANALYTICS_API_KEY = API KEY // API key from Azure Cognitive Services
 
 ---
 
-To get the supporte languages, send a GET request to the endpoint.
+To get the supported languages, send a GET request to the endpoint.
 #### Example: GET /api/linking/languages
 
 #### Expected Response
@@ -123,7 +124,7 @@ To get the supporte languages, send a GET request to the endpoint.
 
 ---
 
-To use the API, send a POST request to the endpoint. The request body should be in JSON format and should contain the following field:
+To use the API and its entity features, send a POST request to the endpoint. The request body should be in JSON format and should contain the following field:
 - [x] `sendText`: The text to used for recognition/detection
 
 ---
