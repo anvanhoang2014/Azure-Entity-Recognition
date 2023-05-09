@@ -224,3 +224,25 @@ To use the API and its entity features, send a POST request to the endpoint. The
   }
 ]
 ```
+
+
+
+## Q&A
+---
+
+### How do I get an API Key?
+- [ ] [Create a Cognitive Services resource in the Azure portal](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Canomaly-detector%2Clanguage-service%2Ccomputer-vision%2Cwindows)
+
+- [ ] [Get the keys for your resource](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Canomaly-detector%2Clanguage-service%2Ccomputer-vision%2Cwindows#get-the-key-and-endpoint-for-your-resource:~:text=to%20your%20account.-,Get%20the%20keys%20for%20your%20resource,-After%20your%20resource)
+
+
+
+## Author
+---
+
+
+### Murtadha Marzouq
+##### An Hoang
+
+<a href="https://www.linkedin.com/in/anhoangcs/">![](https://img.shields.io/badge/LinkedIn-blute)</a>
+<a href="https://github.com/anvanhoang2014">![](https://img.shields.io/badge/Github-An Hoang-black)</a>
