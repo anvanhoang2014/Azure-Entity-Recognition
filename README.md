@@ -63,5 +63,9 @@ TEXT_ANALYTICS_API_KEY = "<API KEY>" # API key
 
 | Endpoint           | Description                                                             |
 | ------------------ | ----------------------------------------------------------------------- |
-| `POST /entity/named/result`   |   Perfrom Named Entity Recognition for the provided text                   |
+| `POST /entity/named/result`   |   Performs Named Entity Recognition for the provided text                   |
 | `GET /entity/named/languages`   | Returns the list of languages supported by Named Entity Recognition                     |
+| `POST /entity/linking/result`   |   Performs Entity Linking for the provided text                   |
+| `GET /entity/linking/languages`   | Returns the list of languages supported by Entity Linking                     |
+| `POST /entity/pii/result`   |   Performs Personally Identifiable Information (PII) detection for the provided text      |
+| `GET /entity/pii/languages`   | Returns the list of languages supported by PII                    |
