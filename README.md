@@ -1,4 +1,4 @@
-# Recognition API Using Azure Cognitive Services
+# Entity Recognition API Using Azure Cognitive Services
 
 ## Description
 The API serves as an intermediary between the Client and Azure Cognitive Service for Language. It operates as a RESTful API that utilizes HTTP requests for both data retrieval and submission.
@@ -82,3 +82,37 @@ TEXT_ANALYTICS_API_KEY = "<API KEY>" # API key
 | `GET /api/linking/languages`   | Returns the list of languages supported by Entity Linking                     |
 | `POST /api/pii/result`   |   Performs Personally Identifiable Information (PII) detection for the provided text      |
 | `GET /api/pii/languages`   | Returns the list of languages supported by PII                    |
+  
+  
+ ### Using the API (Example)
+---
+
+The API can be used by sending a POST request to the endpoint. The request body should be in JSON format and should contain the following fields:
+- [ ] `sendText`: The text to used for recognition
+
+### Example: POST /api/named/result
+
+```json
+{
+  "sendText": "Hi, I'm Bill Gates"
+}
+```
+
+### Example Response
+```json
+[
+  {
+    "id": "1",
+    "warnings": [],
+    "entities": [
+      {
+        "text": "Bill Gates",
+        "category": "Person",
+        "offset": 8,
+        "length": 10,
+        "confidenceScore": 1
+      }
+    ]
+  }
+]
+```
