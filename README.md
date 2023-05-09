@@ -93,10 +93,10 @@ TEXT_ANALYTICS_API_KEY = API KEY #API key from Azure Cognitive Services
  ### Using the API
 ---
 
-To use the API, send a POST request to the endpoint. The request body should be in JSON format and should contain the following fields:
-- [ ] `sendText`: The text to used for recognition
+To use the API, send a POST request to the endpoint. The request body should be in JSON format and should contain the following field:
+- [x] `sendText`: The text to used for recognition
 
-### Example: POST /api/named/result
+#### Example: POST /api/named/result
 
 ```json
 {
@@ -104,7 +104,7 @@ To use the API, send a POST request to the endpoint. The request body should be 
 }
 ```
 
-### Expected Response
+#### Expected Response
 ```json
 [
   {
@@ -123,7 +123,7 @@ To use the API, send a POST request to the endpoint. The request body should be 
 ]
 ```
 
-### Example: POST /api/linking/result
+#### Example: POST /api/linking/result
 
 ```json
 {
@@ -131,7 +131,7 @@ To use the API, send a POST request to the endpoint. The request body should be 
 }
 ```
 
-### Expected Response
+#### Expected Response
 ```json
 [
   {
@@ -159,15 +159,15 @@ To use the API, send a POST request to the endpoint. The request body should be 
 ]
 ```
 
-### Example: POST /api/pii/result
+#### Example: POST /api/pii/result
 
 ```json
 {
-  "sendText": "Hi, I'm Bill Gates"
+  "sendText": "Bill Gates' cell 9801234567"
 }
 ```
 
-### Expected Response
+#### Expected Response
 ```json
 [
   {
