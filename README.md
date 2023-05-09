@@ -74,6 +74,9 @@ git clone https://github.com/username/repo-name.git
 cd repo-name
 ```
 2. Run "npm install".
+```bash
+npm install
+```
 3. Set up environment variables in the `config` folder. Create a `.env` file and add the following as `key=value`:
 ```javascript
 HOST = Your Host Address
@@ -82,6 +85,9 @@ ENDPOINT = API ENDPOINT // ENDPOINT address from Azure Cognitive Services
 TEXT_ANALYTICS_API_KEY = API KEY // API key from Azure Cognitive Services
 ```
 4. Run "npm start".
+```bash
+npm start
+```
 ---
 
 <br>  
@@ -306,14 +312,14 @@ To use the API and its cognitive features, send a POST request to the endpoint. 
 ## Q&A
 ---
 
-### How do I clone a repository?
+### How to clone a repository?
 - [ ] [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### How to use npm?
 - [ ] [Install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs/)
 - [ ] [Install Packages](https://docs.npmjs.com/cli/v8/commands/npm-install)
 
-### How do I get an API Key?
+### How to get an API Key?
 - [ ] [Create a Cognitive Services resource in the Azure portal](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Canomaly-detector%2Clanguage-service%2Ccomputer-vision%2Cwindows)
 
 - [ ] [Get the keys for your resource](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Canomaly-detector%2Clanguage-service%2Ccomputer-vision%2Cwindows#get-the-key-and-endpoint-for-your-resource:~:text=to%20your%20account.-,Get%20the%20keys%20for%20your%20resource,-After%20your%20resource)
