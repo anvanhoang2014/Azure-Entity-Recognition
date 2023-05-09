@@ -29,3 +29,27 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
   - Named Entity Recognition (NER) - Identify and categorize entities in unstructured text. For example: people, places, organizations, and quantities.
   - Entity Linking - Identifies and disambiguates the identity of entities found in text. For example, in the sentence "We went to Seattle last week.", the word "Seattle" would be identified, with a link to more information on Wikipedia.
   - Personally Identifiable Information (PII) Detection - Identify, categorize, and redact sensitive information in unstructured text. For example: phone numbers, email addresses, and forms of identification.
+  
+ ## Getting Started
+
+---
+<a href="">![](https://img.shields.io/badge/GettingStarted-Setup-purple) </a>
+
+### Dependencies
+
+- [ ] Node.js
+- [ ] Azure Cognitive Services (API Key and Endpoint)
+
+### Running the program
+```bash
+git clone repo && cd repo
+npm install
+npm start
+```
+### Environment Variables
+###### Create a .env file in the config directory and add the following variables ####
+
+```bash
+
+```
+  
