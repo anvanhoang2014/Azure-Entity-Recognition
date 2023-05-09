@@ -125,7 +125,7 @@ To get the supported languages, send a GET request to the endpoint.
 
 ---
 
-To use the API and its entity features, send a POST request to the endpoint. The request body should be in JSON format and should contain the following field:
+To use the API and its cognitive features, send a POST request to the endpoint. The request body should be in JSON format and should contain the following field:
 - [x] `sendText`: The text to used for recognition/detection
 
 ---
@@ -156,6 +156,8 @@ To use the API and its entity features, send a POST request to the endpoint. The
   }
 ]
 ```
+
+<br>
 
 ---
 
@@ -194,6 +196,8 @@ To use the API and its entity features, send a POST request to the endpoint. The
   }
 ]
 ```
+
+<br>
 
 ---
 
@@ -268,6 +272,8 @@ To use the API and its entity features, send a POST request to the endpoint. The
 
 ---
 
+<br>
+
 ## Q&A
 ---
 
@@ -277,7 +283,7 @@ To use the API and its entity features, send a POST request to the endpoint. The
 - [ ] [Get the keys for your resource](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Canomaly-detector%2Clanguage-service%2Ccomputer-vision%2Cwindows#get-the-key-and-endpoint-for-your-resource:~:text=to%20your%20account.-,Get%20the%20keys%20for%20your%20resource,-After%20your%20resource)
 
 
-
+<br>
 
 ## Author
 ---
