@@ -80,6 +80,11 @@ TEXT_ANALYTICS_API_KEY = API KEY // API key from Azure Cognitive Services
 | `GET /entity/pii/languages`   | Returns the list of languages supported by PII                    |
   
   
+---
+--
+-
+----
+
 <a href="http://159.65.233.166:3000/">![](https://img.shields.io/badge/Try-Demo-orange)</a>
 <img src="demo/app-demo.gif"> 
   
