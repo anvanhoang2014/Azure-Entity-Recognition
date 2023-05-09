@@ -26,7 +26,7 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
   
 ## Features
   - Named Entity Recognition (NER) - Identify and categorize entities in unstructured text. For example: people, places, organizations, and quantities.
-  - Entity Linking - Identifies and disambiguates the identity of entities found in text. For example, in the sentence "We went to Seattle last week.", the word "Seattle" would be identified, with a link to more information on Wikipedia.
+  - Entity Linking - Identifies and disambiguates the identity of entities found in text. For example, in the sentence "Hi, I'm Bill Gates", the words "Bill Gates" would be identified, with a link to more information on Wikipedia.
   - Personally Identifiable Information (PII) Detection - Identify, categorize, and redact sensitive information in unstructured text. For example: phone numbers, email addresses, and forms of identification.
   
  ## Getting Started
