@@ -43,19 +43,19 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 #### For the program, you will need the following dependencies:
 
 - [x] [Git](https://github.com/git-guides/install-git)
-```bash
-git clone https://github.com/username/repo-name.git
-cd repo-name
-```
 - [x] [Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs/)
 - [x] [Azure Cognitive Services (API Key and Endpoint)](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Canomaly-detector%2Clanguage-service%2Ccomputer-vision%2Cwindows)
 
 #### To run the program, follow these steps:
 
 1. Clone the repo and navigate to it.
+```bash
+git clone https://github.com/username/repo-name.git
+cd repo-name
+```
 2. Run "npm install".
 3. Set up environment variables in the `config` folder. Create a `.env` file and add the following as `key=value`:
-```bash
+```javascript
 HOST = Your Host Address
 PORT = Port Number # (ex: 3000)
 ENDPOINT = API ENDPOINT #ENDPOINT address from Azure Cognitive Services
