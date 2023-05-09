@@ -229,11 +229,11 @@ To use the API and its entity features, send a POST request to the endpoint. The
 
 ---
 
+<br>
 
-### Invalid Resquest & Response
+### Invalid Resquest & Response Examples
 
-#### Example: POST /api/named
-
+#### POST /api/named
 
 ```json
 {
@@ -248,7 +248,9 @@ To use the API and its entity features, send a POST request to the endpoint. The
   "status": 400
 }
 ```
+<br>
 
+#### POST /api/named
 
 ```json
 {
@@ -264,6 +266,7 @@ To use the API and its entity features, send a POST request to the endpoint. The
 }
 ```
 
+---
 
 ## Q&A
 ---
