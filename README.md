@@ -306,6 +306,13 @@ To use the API and its cognitive features, send a POST request to the endpoint. 
 ## Q&A
 ---
 
+### How do I clone a repository?
+- [ ] [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+### How to use npm?
+- [ ] [Install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs/)
+- [ ] [Install Packages](https://docs.npmjs.com/cli/v8/commands/npm-install)
+
 ### How do I get an API Key?
 - [ ] [Create a Cognitive Services resource in the Azure portal](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Canomaly-detector%2Clanguage-service%2Ccomputer-vision%2Cwindows)
 
@@ -327,7 +334,7 @@ To use the API and its cognitive features, send a POST request to the endpoint. 
 <br>
 <br>
 
-## Author
+## License
 Copyright 2023 An Hoang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
