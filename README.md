@@ -26,7 +26,7 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 - [ ] [Description](#description)
   - [ ] [Quick Links](#quick-links)
   - [ ] [Demo](#demo)
-  [ ] [Table of Contents](#table-of-contents)
+- [ ] [Table of Contents](#table-of-contents)
 - [ ] [Features](#features)
 - [ ] [Getting Started](#getting-started)
 - [ ] [Endpoints](#endpoints)
@@ -41,8 +41,9 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 - [ ] [Authors](#authors)
 - [ ] [License](#license)
   
-
 ---
+
+<br>
 
 ## Features
 | Features                    | Description                                                             |
@@ -82,7 +83,9 @@ TEXT_ANALYTICS_API_KEY = API KEY // API key from Azure Cognitive Services
 ```
 4. Run "npm start".
 ---
-  
+
+<br>  
+
 ## Endpoints
 ---
 
@@ -104,7 +107,9 @@ TEXT_ANALYTICS_API_KEY = API KEY // API key from Azure Cognitive Services
 <a href="http://159.65.233.166:3000/">![](https://img.shields.io/badge/Try-Demo-orange)</a>
 <img src="demo/app-demo.gif"> 
   
----
+
+<br>
+
 ---
 
 
@@ -119,7 +124,9 @@ TEXT_ANALYTICS_API_KEY = API KEY // API key from Azure Cognitive Services
 | `GET /api/pii/languages`   | Returns the list of languages supported by PII                    |
   
   
- ### Using the API
+<br>
+
+### Using the API
 
 ---
 
@@ -253,6 +260,8 @@ To use the API and its cognitive features, send a POST request to the endpoint. 
 <br>
 
 ### Invalid Resquest & Response Examples
+
+<br>
 
 #### POST /api/named
 
