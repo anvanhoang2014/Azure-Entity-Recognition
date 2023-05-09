@@ -37,6 +37,7 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
   
   
 <br>
+
 ## Getting Started
 
 ---
