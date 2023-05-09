@@ -121,7 +121,7 @@ To get the supported languages, send a GET request to the endpoint.
 }
 ```
 
----
+<br>
 
 ---
 
@@ -227,6 +227,44 @@ To use the API and its entity features, send a POST request to the endpoint. The
 
 
 
+---
+
+
+### Invalid Resquest & Response
+
+#### Example: POST /api/named
+
+
+```json
+{
+  "sendText": ""
+}
+```
+
+#### Expected Response
+```json
+{
+  "message": "Please provide an input",
+  "status": 400
+}
+```
+
+
+```json
+{
+  "sendText": "แมวเหมียวน่ารักมากๆ ครับ"
+}
+```
+
+#### Expected Response
+```json
+{
+  "message": "Language not supported",
+  "status": 400
+}
+```
+
+
 ## Q&A
 ---
 
@@ -237,10 +275,11 @@ To use the API and its entity features, send a POST request to the endpoint. The
 
 
 
+
 ## Author
 ---
 
 ##### An Hoang
 
 <a href="https://www.linkedin.com/in/anhoangcs/">![](https://img.shields.io/badge/AnHoang-LinkedIn-blue)</a>
-<a href="https://github.com/anvanhoang2014">![](https://img.shields.io/badge/AnHoang-Github-gray)</a>
+<a href="https://github.com/anvanhoang2014">![](https://img.shields.io/badge/AnHoang-Github-red)</a>
