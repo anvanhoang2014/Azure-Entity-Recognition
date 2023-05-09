@@ -30,13 +30,13 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 
 ## Features
 
-### Named Entity Recognition
+#### Named Entity Recognition
 ###### Identify and categorize entities in unstructured text. For example: people, places, organizations, and quantities.
-### Entity Linking
+#### Entity Linking
 ###### Identifies and disambiguates the identity of entities found in text. For example, in the sentence "Hi, I'm Bill Gates", the words "Bill Gates" would be identified, with a link to more information on Wikipedia.
-### PII Detection
+#### PII Detection
 ###### Identify, categorize, and redact sensitive information in unstructured text. For example: phone numbers, email addresses, and forms of identification.
-### Language Detection
+#### Language Detection
 ###### Automatically detect the user's language when performing the above features.
 
 ---
