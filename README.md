@@ -49,7 +49,7 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 
 1. Clone the repo and navigate to it.
 2. Run "npm install".
-3. Set up environment variables in the config folder. Create a `.env` file and add the following as `key=value`:
+3. Set up environment variables in the `config` folder. Create a `.env` file and add the following as `key=value`:
 ```bash
 HOST = Your Host Address
 PORT = Port Number # (ex: 3000)
