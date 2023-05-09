@@ -64,11 +64,13 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 
 1. Clone the repo and navigate to it.
 2. Run "npm install".
-3. Set up environment variables in the config folder. Create a .env file and add the following as key=value:
-HOST: Your host address.
-PORT: Port number (e.g., 3000).
-ENDPOINT: API endpoint address from Azure Cognitive Services.
-TEXT_ANALYTICS_API_KEY: API key from Azure Cognitive Services.
+3. Set up environment variables in the config folder. Create a `.env` file and add the following as `key=value`:
+```bash
+HOST = Your Host Address
+PORT = Port Number # (ex: 3000)
+ENDPOINT = API ENDPOINT #ENDPOINT address from Azure Cognitive Services
+TEXT_ANALYTICS_API_KEY = API KEY #API key from Azure Cognitive Services
+```
 4. Run "npm start".
 ---
 ### Environment Variables
