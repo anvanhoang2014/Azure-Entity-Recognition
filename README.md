@@ -40,10 +40,10 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 ---
 <a href="">![](https://img.shields.io/badge/GettingStarted-Setup-purple) </a>
 
-### Dependencies
+### Dependencies Required
 
-- [ ] Node.js
-- [ ] Azure Cognitive Services (API Key and Endpoint)
+- [x] [Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs/)
+- [x] [Azure Cognitive Services (API Key and Endpoint)](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Canomaly-detector%2Clanguage-service%2Ccomputer-vision%2Cwindows)
 
 ### Running the program
 ```bash
