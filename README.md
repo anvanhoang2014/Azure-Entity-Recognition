@@ -56,3 +56,11 @@ ENDPOINT = "<API ENDPOINT> # ENDPOINT address
 TEXT_ANALYTICS_API_KEY = "<API KEY>" # API key
 ```
   
+## Endpoints
+---
+
+
+
+| Endpoint           | Description                                                             |
+| ------------------ | ----------------------------------------------------------------------- |
+| `GET /entity/named/languages`   | Returns the list of languages supported by Named Entity Recognition                     |
