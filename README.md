@@ -17,7 +17,8 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 <a href="">![](https://img.shields.io/badge/LiveDemo-POC-red)</a>
 
 #### Working Application
-<gif goes here>
+<img src="demo/app-demo.gif"> 
+
 #### API Playground (Swagger)
 <gif goes here>
   
