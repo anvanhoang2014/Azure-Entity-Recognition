@@ -55,10 +55,10 @@ npm start
 ##### Inside the config folder, create a `.env` file and add the following as `key = value`
 
 ```bash
-HOST = Your Host Address
-PORT = #Port Number (ex: 3000)
-ENDPOINT = "<API ENDPOINT> #ENDPOINT address
-TEXT_ANALYTICS_API_KEY = "<API KEY>" #API key
+HOST = `Your Host Address`
+PORT = `Port Number` # (ex: 3000)
+ENDPOINT = `API ENDPOINT` #ENDPOINT address
+TEXT_ANALYTICS_API_KEY = `API KEY` #API key
 ```
   
 ## Endpoints
