@@ -29,7 +29,7 @@ exports.namedResult = async (req, res, next) => {
         } 
         
         if (!isLanguageSupported) {
-            const error = createError('Language not supported', 500);
+            const error = createError('Language not supported', 400);
             return res.status(error.status).json({ message: error.message, status: error.status });
         }
 
@@ -54,7 +54,7 @@ exports.linkingResult = async (req, res, next) => {
         const isoCode = await detectLanguage(textInput);
         let isLanguageSupported = false;
 
-        for (const languageCode in languageData.pii) {
+        for (const languageCode in languageData.linking) {
             if (languageCode === isoCode) {
                 isLanguageSupported = true;
                 const textDocumentInputs = [
@@ -66,7 +66,7 @@ exports.linkingResult = async (req, res, next) => {
         } 
     
         if (!isLanguageSupported) {
-            const error = createError('Language not supported', 500);
+            const error = createError('Language not supported', 400);
             return res.status(error.status).json({ message: error.message, status: error.status });
         }
 
@@ -102,7 +102,7 @@ exports.piiResult = async (req, res, next) => {
             }
         }
         if (!isLanguageSupported) {
-            const error = createError('Language not supported', 500);
+            const error = createError('Language not supported', 400);
             return res.status(error.status).json({ message: error.message, status: error.status });
         }
     } catch (error) {

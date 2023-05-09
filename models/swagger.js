@@ -85,7 +85,7 @@
  *         example:
  *           - id: "1"
  *             warnings: []
- *             redactedText: "********** and ************* are getting a divorce"
+ *             redactedText: "********** and ************* got a divorce"
  *             entities:
  *               - text: "Bill Gates"
  *                 category: "Person"
@@ -121,7 +121,7 @@
  *               sendText:
  *                 type: string
  *                 description: The text to be analyzed for named entities
- *                 example: "Bill Gates and Melinda Gates are getting a divorce"
+ *                 example: "Bill Gates and Melinda Gates got a divorce"
  *             required:
  *               - sendText
  *     responses:
@@ -242,7 +242,7 @@
  *               sendText:
  *                 type: string
  *                 description: The text to be analyzed for named entities
- *                 example: "Bill Gates and Melinda Gates are getting a divorce"
+ *                 example: "Bill Gates and Melinda Gates got a divorce"
  *             required:
  *               - sendText
  *     responses:
@@ -329,6 +329,47 @@
  *                 ]
  *               }
  *             ]
+ * 
+ *       400:
+ *         description: Bad request, the sendText field is missing
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: "Please provide an input"
+ *                 status:
+ *                   type: number
+ *                   example: 400
+ *       404:
+ *         description: Not found, the server cannot locate the requested URL
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: "The server cannot locate /api/namedEntityRecognition"
+ *                 status:
+ *                   type: number
+ *                   example: 404
+ *       500:
+ *         description: Internal server error, the language is not supported
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: "Internal Server Error"
+ *                 status:
+ *                   type: number
+ *                   example: 500
+ *
  * /api/linking/languages:
  *   get:
  *     summary: Returns a list of Entity Linking supported languages
@@ -369,7 +410,7 @@
  *               sendText:
  *                 type: string
  *                 description: The text to be analyzed for named entities
- *                 example: "Bill Gates and Melinda Gates are getting a divorce"
+ *                 example: "Bill Gates and Melinda Gates got a divorce"
  *             required:
  *               - sendText
  *     responses:
@@ -414,7 +455,7 @@
  *               properties:
  *                 message:
  *                   type: string
- *                   example: "Language not supported"
+ *                   example: "Internal Server Error"
  *                 status:
  *                   type: number
  *                   example: 500

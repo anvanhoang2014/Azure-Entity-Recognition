@@ -58,11 +58,10 @@ exports.linkingResult = async (req, res, next) => {
       const error = createError('Please provide an input', 400);
       return next(error);
     }
-
     const isoCode = await detectLanguage(textInput);
     let isLanguageSupported = false;
 
-    for (const languageCode in languageData.pii) {
+    for (const languageCode in languageData.linking) {
       if (languageCode === isoCode) {
         isLanguageSupported = true;
         const textDocumentInputs = [
@@ -113,7 +112,7 @@ exports.piiResult = async (req, res, next) => {
       }
     }
     if (!isLanguageSupported) {
-      const error = createError('Language not supported', 500);
+      const error = createError('Language not supported', 400);
       return next(error);
     }
   } catch (err) {
