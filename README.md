@@ -179,7 +179,7 @@ To use the API, send a POST request to the endpoint. The request body should be 
 
 ```json
 {
-  "sendText": "Bill Gates' cell 9801234567"
+  "sendText": "My cell is 9801234567"
 }
 ```
 
@@ -189,19 +189,12 @@ To use the API, send a POST request to the endpoint. The request body should be 
   {
     "id": "1",
     "warnings": [],
-    "redactedText": "**********' cell **********",
+    "redactedText": "My cell is **********",
     "entities": [
-      {
-        "text": "Bill Gates",
-        "category": "Person",
-        "offset": 0,
-        "length": 10,
-        "confidenceScore": 0.97
-      },
       {
         "text": "9801234567",
         "category": "PhoneNumber",
-        "offset": 17,
+        "offset": 11,
         "length": 10,
         "confidenceScore": 0.8
       }
