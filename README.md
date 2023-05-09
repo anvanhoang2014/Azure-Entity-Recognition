@@ -63,4 +63,5 @@ TEXT_ANALYTICS_API_KEY = "<API KEY>" # API key
 
 | Endpoint           | Description                                                             |
 | ------------------ | ----------------------------------------------------------------------- |
+| `POST /entity/named/result`   |   Perfrom Named Entity Recognition for the provided text                   |
 | `GET /entity/named/languages`   | Returns the list of languages supported by Named Entity Recognition                     |
