@@ -123,8 +123,11 @@ TEXT_ANALYTICS_API_KEY = API KEY // API key from Azure Cognitive Services
 | `POST /api/pii`   |   Performs Personally Identifiable Information (PII) detection for the provided text      |
 | `GET /api/pii/languages`   | Returns the list of languages supported by PII                    |
   
-  
 <br>
+
+Testing Endpoints with Swagger
+
+<a href="http://159.65.233.166:3000/api-docs/">![](https://img.shields.io/badge/Try-Swagger-green)</a>
 
 ### Using the API
 
