@@ -309,6 +309,16 @@ To use the API and its cognitive features, send a POST request to the endpoint. 
 
 <br>
 
+### Testing with Postman
+
+---
+
+<img src="demo/postman.JPG"> 
+
+---
+
+<br>
+
 ## Q&A
 ---
 
