@@ -58,8 +58,8 @@ npm start
 ```bash
 HOST = Your Host Address
 PORT = Port Number # (ex: 3000)
-ENDPOINT = `API ENDPOINT` #ENDPOINT address from Azure Cognitive Services
-TEXT_ANALYTICS_API_KEY = `API KEY` #API key from Azure Cognitive Services
+ENDPOINT = API ENDPOINT #ENDPOINT address from Azure Cognitive Services
+TEXT_ANALYTICS_API_KEY = API KEY #API key from Azure Cognitive Services
 ```
   
 ## Endpoints
