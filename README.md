@@ -38,7 +38,7 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
   - [ ] [Invalid Request Query](#invalid-resquest--response-examples)
   - [ ] [Example Response](#expected-response-4) 
 - [ ] [Q&A](#qa)
-- [ ] [Authors](#authors)
+- [ ] [Authors](#author)
 - [ ] [License](#license)
   
 ---
@@ -264,7 +264,7 @@ To use the API and its cognitive features, send a POST request to the endpoint. 
 
 ### Invalid Resquest & Response Examples
 
-<br>
+---
 
 #### POST /api/named
 
@@ -321,3 +321,17 @@ To use the API and its cognitive features, send a POST request to the endpoint. 
 
 <a href="https://www.linkedin.com/in/anhoangcs/">![](https://img.shields.io/badge/AnHoang-LinkedIn-blue)</a>
 <a href="https://github.com/anvanhoang2014">![](https://img.shields.io/badge/AnHoang-Github-red)</a>
+
+---
+
+<br>
+<br>
+
+## Author
+Copyright 2023 An Hoang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
