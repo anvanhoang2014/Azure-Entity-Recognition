@@ -61,15 +61,6 @@ TEXT_ANALYTICS_API_KEY = API KEY #API key from Azure Cognitive Services
 ```
 4. Run "npm start".
 ---
-### Environment Variables
-##### Inside the config folder, create a `.env` file and add the following as `key = value`
-
-```bash
-HOST = Your Host Address
-PORT = Port Number # (ex: 3000)
-ENDPOINT = API ENDPOINT #ENDPOINT address from Azure Cognitive Services
-TEXT_ANALYTICS_API_KEY = API KEY #API key from Azure Cognitive Services
-```
   
 ## Endpoints
 ---
@@ -113,7 +104,7 @@ To use the API, send a POST request to the endpoint. The request body should be 
 }
 ```
 
-### Example Response
+### Expected Response
 ```json
 [
   {
@@ -126,6 +117,77 @@ To use the API, send a POST request to the endpoint. The request body should be 
         "offset": 8,
         "length": 10,
         "confidenceScore": 1
+      }
+    ]
+  }
+]
+```
+
+### Example: POST /api/linking/result
+
+```json
+{
+  "sendText": "Hi, I'm Bill Gates"
+}
+```
+
+### Expected Response
+```json
+[
+  {
+    "id": "1",
+    "warnings": [],
+    "entities": [
+      {
+        "name": "Bill Gates",
+        "matches": [
+          {
+            "confidenceScore": 0.14,
+            "text": "Bill Gates",
+            "offset": 8,
+            "length": 10
+          }
+        ],
+        "language": "en",
+        "dataSourceEntityId": "Bill Gates",
+        "url": "https://en.wikipedia.org/wiki/Bill_Gates",
+        "dataSource": "Wikipedia",
+        "bingEntitySearchApiId": "0d47c987-0042-5576-15e8-97af601614fa"
+      }
+    ]
+  }
+]
+```
+
+### Example: POST /api/pii/result
+
+```json
+{
+  "sendText": "Hi, I'm Bill Gates"
+}
+```
+
+### Expected Response
+```json
+[
+  {
+    "id": "1",
+    "warnings": [],
+    "redactedText": "**********' cell **********",
+    "entities": [
+      {
+        "text": "Bill Gates",
+        "category": "Person",
+        "offset": 0,
+        "length": 10,
+        "confidenceScore": 0.97
+      },
+      {
+        "text": "9801234567",
+        "category": "PhoneNumber",
+        "offset": 17,
+        "length": 10,
+        "confidenceScore": 0.8
       }
     ]
   }
