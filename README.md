@@ -56,9 +56,9 @@ npm start
 
 ```bash
 HOST = Your Host Address
-PORT = Port Number (ex: 3000)
-ENDPOINT = "<API ENDPOINT> # ENDPOINT address
-TEXT_ANALYTICS_API_KEY = "<API KEY>" # API key
+PORT = #Port Number (ex: 3000)
+ENDPOINT = "<API ENDPOINT> #ENDPOINT address
+TEXT_ANALYTICS_API_KEY = "<API KEY>" #API key
 ```
   
 ## Endpoints
