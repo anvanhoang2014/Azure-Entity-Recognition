@@ -14,7 +14,6 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
 
 ---
 
-<a href="">![](https://img.shields.io/badge/LiveDemo-POC-red)</a>
 
 #### Working Application
 <img src="demo/app-demo.gif"> 
@@ -41,7 +40,6 @@ The API serves as an intermediary between the Client and Azure Cognitive Service
  ## Getting Started
 
 ---
-<a href="">![](https://img.shields.io/badge/GettingStarted-Setup-purple) </a>
 
 #### To use the API, you will need the following dependencies:
 
